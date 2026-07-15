@@ -1,0 +1,9 @@
+# Goal
+int32 marker_id
+float32 angle_accuracy    # acceptable yaw error, in degrees
+---
+# Result
+bool success
+---
+# Feedback
+float32 yaw_error

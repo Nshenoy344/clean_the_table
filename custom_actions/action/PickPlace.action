@@ -1,0 +1,12 @@
+# Goal
+string operation              # "pick" or "place"
+int32 marker_id                # object marker (pick) or drop-table marker (place)
+int32 drop_index               # used to compute the drop offset (place only)
+int32[] non_target_markers     # markers to add as temporary collision boxes while picking
+---
+# Result
+bool success
+string message
+---
+# Feedback
+string stage                   # e.g. "opening_gripper", "moving_arm", "grasping", "retreating"

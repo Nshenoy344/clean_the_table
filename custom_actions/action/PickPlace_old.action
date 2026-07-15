@@ -1,0 +1,6 @@
+#Goal message
+int32 marker_id
+---
+#Result message
+bool result
+---

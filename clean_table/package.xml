@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>clean_table</name>
+  <version>0.0.1</version>
+  <description>Modularized pick-and-place table-clearing behavior for Tiago</description>
+  <maintainer email="you@example.com">your_name</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- orchestrator_node -->
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>nav2_msgs</depend>
+  <depend>teleop_tools_msgs</depend>
+
+  <!-- drive_distance_server / align_to_marker_server -->
+  <depend>tf_transformations</depend>
+
+  <!-- marker_lookup_service -->
+  <depend>apriltag_msgs</depend>
+  <depend>tf2_ros</depend>
+
+
+  <!-- interfaces -->
+  <depend>custom_actions</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

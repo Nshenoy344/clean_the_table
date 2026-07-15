@@ -1,0 +1,10 @@
+# Goal
+float32 distance          # target distance magnitude, in meters (always positive)
+int8 direction             # 1 = forward, -1 = backward
+---
+# Result
+bool success
+float32 distance_travelled
+---
+# Feedback
+float32 distance_travelled
